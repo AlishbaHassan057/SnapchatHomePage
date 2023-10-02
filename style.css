@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #fffc00;
+  font-family: sans-serif;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.main2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-top: 0.2rem;
+}
+.main-image {
+  display: flex;
+  margin: auto;
+}
+.title h1 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+.title p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.button1 {
+  background: #000;
+  color: white;
+  padding: 0.5rem 2.5rem;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.button2 {
+  background: #000;
+  color: white;
+  padding: 0.5rem 0.3rem;
+  width: 5rem;
+  border-radius: 10px;
+  font-size: 10px;
+}
+.main-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+ul {
+  list-style-type: none;
+}
+
+.mid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.left,
+.right {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  padding: 0.5rem;
+  gap: 0.2rem;
+  border-radius: 20px;
+}
+
+input[type="search"] {
+  background-color: transparent;
+  border: none;
+}
+::placeholder {
+  font-weight: bold;
+  color: gray;
+}
+.logo i {
+  font-size: 25px;
+}
+.mid-icon {
+  font-size: 25px;
+}
+
+.grid i {
+  background: white;
+  padding: 0.7rem;
+  border-radius: 50%;
+}
+.ads,
+.download {
+  background-color: black;
+  color: white;
+  padding: 0.3rem 0.9rem;
+  border-radius: 20px;
+}
+.right h5 {
+  display: none;
+}
+.menu-bar {
+  display: none;
+}
+.download-snapchat {
+  display: none;
+}
+.para {
+  display: none;
+}
+.button {
+  display: none;
+}
+.information {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+  width: 80%;
+  margin: auto;
+}
+.language {
+  margin-left: 2rem;
+}
+
+footer {
+  background: white;
+  margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .right h5 {
+    display: inline;
+    margin-right: -110px;
+    font-size: 17px;
+  }
+  footer {
+    display: none;
+  }
+  .main2 {
+    display: none;
+  }
+
+  .menu-bar {
+    display: inline;
+  }
+  .grid,
+  .ads,
+  .download,
+  .search-bar {
+    display: none;
+  }
+  .mid {
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    width: 100%;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .search {
+    border-radius: 50%;
+    font-size: 20px;
+    background: white;
+    padding: 0.3rem 0.6rem;
+    margin-left: -80px;
+  }
+  .logo i {
+    /* background: white; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.1rem 0.4rem;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .menu-bar {
+    background: white;
+    padding: 0.2rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+    padding: 0.1rem 0.4rem;
+    font-size: 1.5rem;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .download-snapchat {
+    display: block;
+    width: 50%;
+    margin-left: 170px;
+    margin-top: 8rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+    min-width: 400px;
+  }
+  .para {
+    display: block;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    margin-left: 30px;
+    min-width: 300px;
+  }
+  .button {
+    display: inline;
+    background: #000;
+    color: white;
+    padding: 0.5rem 2.5rem;
+    border-radius: 30px;
+    border: none;
+    margin-left: 2.5rem;
+    margin-right: 4rem;
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
